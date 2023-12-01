@@ -1,3 +1,4 @@
+using Azure.Identity;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -8,6 +9,16 @@ using Web.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+var hasKeyVault = !string.IsNullOrEmpty(builder.Configuration["AZURE_KEY_VAULT_ENDPOINT"]);
+if (hasKeyVault)
+{
+    builder.Configuration.AddAzureKeyVault(
+        new Uri(builder.Configuration["AZURE_KEY_VAULT_ENDPOINT"]!),
+        new DefaultAzureCredential());
+}
+
+builder.Services.AddApplicationInsightsTelemetry(builder.Configuration);
+
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
