@@ -6,6 +6,9 @@
 # dotenv files
 .env
 
+# azd files
+.azure
+
 # User-specific files
 *.rsuser
 *.suo
@@ -482,4 +485,3 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
-.azure
