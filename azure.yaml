@@ -6,6 +6,8 @@
 
 # Name of the application.
 name: azd-blazor
+metadata:
+  template: azd-blazor
 services:
     web:
         language: csharp
