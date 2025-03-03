@@ -45,7 +45,7 @@ module web '../core/host/appservice.bicep' = {
     appServicePlanId: appServicePlan.outputs.id
     keyVaultName: keyVaultName
     runtimeName: 'dotnetcore'
-    runtimeVersion: '8.0'
+    runtimeVersion: '9.0'
     appSettings: {
       ASPNETCORE_ENVIRONMENT: 'Development'
     }

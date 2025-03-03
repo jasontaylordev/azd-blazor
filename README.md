@@ -9,7 +9,7 @@ A starter project for creating a Blazor web app using C# and a SQL database host
 The following prerequisites are required to use this application. Please ensure that you have them all installed locally.
 
 - [Azure Developer CLI](https://aka.ms/azd-install)
-- [.NET SDK 8.0](https://dotnet.microsoft.com/download/dotnet/8.0)
+- [.NET SDK 9.0](https://dotnet.microsoft.com/download/dotnet/9.0)
 
 ## Quickstart
 To learn how to get started with any AZD template, follow the steps in [this quickstart](https://learn.microsoft.com/azure/developer/azure-developer-cli/get-started?tabs=localinstall&pivots=programming-language-csharp) with this template (`jasontaylordev/azd-blazor`).
